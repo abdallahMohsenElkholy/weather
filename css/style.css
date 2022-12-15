@@ -1,0 +1,298 @@
+
+:root {
+    --mainColor: #009AD8;
+    --dark: #1E202B;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+    .myContainer {
+        width: 750px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .myContainer {
+        width: 970px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .myContainer {
+        width: 1170px;
+    }
+}
+
+
+
+
+
+.myContainer {
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+/* Start Navbar */
+
+nav {
+    background-color: var(--dark);
+}
+
+
+nav .myContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 20px;
+}
+
+@media (max-width: 500px) {
+    nav .myContainer {
+        flex-direction: column;
+    }
+    nav .navLogo {
+        margin-bottom: 15px;
+    }
+
+    .home button, footer button {
+        padding: 10px 20px;
+    }
+}
+
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav h1 {
+    font-size: 16px;
+}
+
+nav p {
+    font-size: 10px;
+}
+
+nav img {
+    margin-right: 10px;
+}
+
+nav .navLogo, .links ul {
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    transition: all .4s;
+    padding: 2px 20px;
+    font-weight: bold;
+    border-radius: 20px;
+    border: 2px solid transparent;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+
+/* End Navbar */
+
+
+
+/* Start Home */
+
+.home {
+    background-color: #1E202B;
+}
+
+.searchContainer {
+    padding: 70px 0;
+    height: 350px;
+    background-image: url('../images/banner.png');
+}
+
+.search {
+    position: relative;
+}
+
+input {
+    padding: 20px 50px 20px 20px;
+    background-color: var(--dark);
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+
+
+button {
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    bottom: 8px;
+    border: none;
+    background-color: var(--mainColor);
+    color: #fff;
+    padding: 0 40px;
+    border-radius: 50px;
+}
+
+
+.weather-container {
+    position: relative;
+    top: -130px;
+}
+
+
+.forecast {
+    min-height: 346px;
+    padding: 0;
+}
+
+.forecast-content {
+    padding: 30px 20px;
+    background-color: #323544;
+    height: 100%;
+}
+
+.forecast-content2 {
+    background-color: #262936;
+}
+
+.home .forecast-header {
+    background-color: #2D303D;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+
+.home .forecast-header2 {
+    background-color: #222530;
+}
+
+.home .degree {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 90px;
+    font-weight: bolder;
+}
+
+.home .degree-count p{
+    margin-bottom: 0;
+}
+
+.home .degree,
+.home .max-degree {
+    color: #fff;
+    font-weight: bold;
+
+}
+
+.home .max-degree p {
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.home .min-degree p{
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.home .location, 
+.home span, 
+.home .min-degree {
+    color: #BFC1C8;
+}
+
+.home .location {
+    font-size: 18px;
+    font-weight: bold;
+}
+.home .status {
+    font-size: 14px;
+    margin: 20px 0;
+    color: var(--mainColor);
+}
+
+.home span {
+    margin-right: 20px;
+}
+
+.home span img {
+    margin-right: 8px;
+}
+
+
+/* End Home */
+
+
+/* Start Footer */
+
+footer {
+    padding: 50px 0;
+    background-color: #262936;
+}
+
+footer p {
+    color: #BFC1C8;
+}
+
+footer p , footer .social-icons {
+    margin: 10px 0;
+}
+
+footer i {
+    color: var(--mainColor);
+    font-size: 20px;
+}
+
+footer .social-icons a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2.5;
+}
+
+footer  a, footer i {
+    transition: 0.3s ease;
+}
+
+footer a:hover {
+    background-color: var(--mainColor);
+}
+footer a:hover i {
+    color: #fff;
+}
+
+/* End Footer */
+

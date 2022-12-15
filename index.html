@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather</title>
+
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+  <!-- Start Header -->
+
+  <nav class="myNav w-100">
+    <div class="myContainer">
+      <a href="index.html">
+        <div class="navLogo">
+          <div class="img">
+            <img src="images/logo.png" alt="">
+          </div>
+
+          <div class="title">
+            <h1>Weather</h1>
+            <p>tagline goes here</p>
+          </div>
+        </div>
+      </a>
+
+      <div class="links">
+        <ul>
+          <li>
+            <a class="active" href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- End Header -->
+
+
+  <!-- Start Home -->
+
+  <section class="home">
+
+    <div class="searchContainer">
+      <div class="myContainer">
+        <div class="search">
+          <form action="">
+            <input type="text" class="w-100" placeholder="Find your location..." id="searchInp">
+            <button type="submit" id="searchBtn">Find</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!-- Col 1 -->
+    <div class="myContainer weather-container">
+      <div class="forecast-table">
+        <div class="row mx-0">
+
+          <div class="forecast col-md-4">
+            <div class="forecast-header">
+              <div class="day" id="day"></div>
+              <div class="date" id="date"></div>
+            </div>
+
+            <div class="forecast-content">
+              <div class="location" id="location"></div>
+              <div class="degree">
+                <div class="degree-count">
+                  <p id="currentDegree"></p>
+                </div>
+                <div class="forecast-icon">
+                  <img id="weatherImg" src="" alt="" width="90">
+                </div>
+              </div>
+              <div class="status" id="status"></div>
+              <span><img src="images/icon-umberella.png" alt="">20%</span>
+              <span><img src="images/icon-wind.png" alt="">18km/h</span>
+              <span><img src="images/icon-compass.png" alt="">East</span>
+            </div>
+          </div>
+
+          <!-- Col 2 -->
+          <div class="forecast col-md-4">
+            <div class="forecast-header forecast-header2 justify-content-center">
+              <div class="day" id="day"></div>
+            </div>
+
+            <div class="forecast-content forecast-content2 d-flex flex-column justify-content-center align-items-center">
+              <div class="forecast-icon">
+                <img id="weatherImg" src="" alt="" width="48">
+              </div>
+              <div class="max-degree">
+                <p id="maxDegree"></p>
+              </div>
+              <div class="min-degree">
+                <p id="minDegree"></p>
+              </div>
+              <div class="status" id="status"></div>
+            </div>
+          </div>
+
+          <!-- Col 3 -->
+          <div class="forecast col-md-4">
+            <div class="forecast-header justify-content-center">
+              <div class="day" id="day"></div>
+            </div>
+
+            <div class="forecast-content d-flex flex-column justify-content-center align-items-center">
+              <div class="forecast-icon">
+                <img id="weatherImg" src="" alt="" width="48">
+              </div>
+              <div class="max-degree">
+                <p id="maxDegree"></p>
+              </div>
+              <div class="min-degree">
+                <p id="minDegree"></p>
+              </div>
+              <div class="status" id="status"></div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- End Home -->
+
+
+
+  <!-- Start Footer -->
+
+  <footer>
+    <div class="myContainer">
+      <div class="search">
+        <form action="">
+          <input type="text" class="w-100" placeholder="Enter your email to subscribe..." id="searchInp">
+          <button type="submit" id="searchBtn">Subscribe</button>
+        </form>
+      </div>
+      <div class="social-icons text-center">
+        <a href="#"><i class="fab fa-facebook-f"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-google-plus-g"></i></a>
+        <a href="#"><i class="fab fa-pinterest"></i></a>
+      </div>
+      <p class="text-center">Copyright 2021 . Designed by Omar Elkholy. All rights reserved</p>
+    </div>
+  </footer>
+
+  <!-- End Footer -->
+
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+
+
+</body>
+
+</html>
